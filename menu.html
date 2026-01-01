@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeTyy - Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coffee': {
+                            '50': '#fefaf6',
+                            '100': '#f7f0e9',
+                            '200': '#e8d7c8',
+                            '300': '#d6bba3',
+                            '400': '#c19a7e',
+                            '500': '#a1887f',
+                            '600': '#8d6e63',
+                            '700': '#6d4c41',
+                            '800': '#5d4037',
+                            '900': '#3e2723',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-coffee-50 min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-coffee-800 text-white sticky top-0 z-50 shadow-lg"></nav>
+
+    <!-- Header -->
+    <section class="bg-gradient-to-r from-coffee-700 to-coffee-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Menu Kami</h1>
+            <p class="text-xl text-coffee-200 max-w-2xl mx-auto">Pesan langsung via WhatsApp atau klik tombol pesan untuk pembayaran QR</p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <!-- Minuman -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-serif font-bold text-coffee-800 mb-8 text-center border-b-2 border-coffee-200 pb-4">Minuman Kopi</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Cappuccino" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Cappuccino</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 25.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Espresso dengan susu steamed dan foam susu lembut.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Cappuccino', 25000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://liliebakery.fr/wp-content/uploads/2023/10/Latte-macchiato-Lilie-Bakery-1024x1534.jpg" 
+                         alt="Caffè Latte" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Caffè Latte</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 27.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Espresso dengan susu steamed, rasa lembut dan creamy.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Caffè Latte', 27000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.qTCX1Ba1fIS5tBJQPa5kgQHaHa?cb=ucfimg2&ucfimg=1&w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                         alt="Americano" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Americano</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 22.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Espresso dengan air panas, rasa kopi yang kuat.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Americano', 22000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Caramel Macchiato" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Caramel Macchiato</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 30.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Vanilla latte dengan caramel syrup dan espresso.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Caramel Macchiato', 30000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.N4MzyMdkypkiUlMfDM-vkAHaJQ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                         alt="Vanilla Latte" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Vanilla Latte</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 28.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Latte dengan vanilla syrup, aroma vanilla yang harum.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Vanilla Latte', 28000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://i.pinimg.com/originals/76/8b/aa/768baa302c5195ddedfa35ff5ccb7fa0.jpg" 
+                         alt="Mocha" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Mocha</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 29.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Espresso dengan coklat dan susu steamed, whipped cream.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Mocha', 29000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Makanan -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-serif font-bold text-coffee-800 mb-8 text-center border-b-2 border-coffee-200 pb-4">Makanan</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://buckets.sasa.co.id/v1/AUTH_Assets/Assets/p/website/medias/page_medias/Mie_Nyemek.jpeg" 
+                         alt="Mie Nyemek" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Mie Nyemek</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 35.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Mie goreng dengan bumbu spesial dan topping lengkap.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Mie Nyemek', 35000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Dimsum" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Dimsum</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 28.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Dimsum ayam dengan kulit tipis dan isian juicy.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Dimsum', 28000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                    <img src="https://s2.bukalapak.com/uploads/content_attachment/7bc16140a62ae17b54a9acb5/original/resep_roti_bakar_1.jpg" 
+                         alt="Roti Bakar" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-coffee-800">Roti Bakar</h3>
+                            <span class="text-lg font-bold text-coffee-600">Rp 20.000</span>
+                        </div>
+                        <p class="text-coffee-600 mb-6">Roti panggang dengan mentega dan topping pilihan.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="orderItem('Roti Bakar', 20000)" 
+                                    class="flex-1 bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-shopping-bag mr-2"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA -->
+        <section class="bg-gradient-to-r from-coffee-600 to-coffee-700 rounded-2xl p-8 text-center text-white">
+            <h3 class="text-2xl font-serif font-bold mb-4">Pesan Langsung via WhatsApp</h3>
+            <p class="mb-6 max-w-2xl mx-auto">Lebih mudah dan cepat! Klik tombol WhatsApp pada menu untuk pesan langsung atau gunakan tombol di bawah.</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20tia%20coffe,%20saya%20ingin%20pesan%20kopi" 
+               target="_blank"
+               class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                <i class="fab fa-whatsapp mr-2"></i> Pesan via WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-coffee-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-serif font-bold">CoffeeTyy</h3>
+                    <p class="text-coffee-200 mt-2">Kopi terbaik, suasana terbaik.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="text-coffee-200 hover:text-green-300 transition duration-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-coffee-200 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-coffee-200 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-coffee-700 mt-8 pt-8 text-center text-coffee-300">
+                <p>&copy; CoffeeTyy. All rights reserved.</p>
+                <p class="mt-2">WhatsApp: <a href="https://wa.me/62895614396565" class="text-green-300 hover:text-green-200">0895-6143-96565</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification-container" class="notification"></div>
+
+    <script src="js/nav.js"></script>
+    
+    <script>
+    // Menambahkan event listener untuk tombol pesan
+    document.addEventListener('DOMContentLoaded', function() {
+        const orderButtons = document.querySelectorAll('.order-btn');
+        
+        orderButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const name = this.getAttribute('data-name');
+                const price = parseInt(this.getAttribute('data-price'));
+                
+                // Simpan pesanan ke sessionStorage
+                sessionStorage.setItem('orderItem', name);
+                sessionStorage.setItem('orderPrice', price);
+                
+                // Redirect ke halaman pembayaran
+                window.location.href = 'order.html';
+                
+                // Tampilkan notifikasi (opsional)
+                showNotification(`Memproses pesanan ${name}...`);
+            });
+        });
+    });
+    
+    // Fungsi untuk pesan item
+    function orderItem(name, price) {
+        // Simpan pesanan ke sessionStorage
+        sessionStorage.setItem('orderItem', name);
+        sessionStorage.setItem('orderPrice', price);
+        
+        // Redirect ke halaman pembayaran
+        window.location.href = 'order.html';
+        
+        // Tampilkan notifikasi (opsional)
+        showNotification(`Memproses pesanan ${name}...`);
+    }
+    
+    // Fungsi notifikasi
+    function showNotification(message) {
+        const container = document.getElementById('notification-container');
+        const notification = document.createElement('div');
+        notification.className = 'bg-coffee-600 text-white p-4 rounded-lg shadow-lg mb-3 slide-in';
+        notification.innerHTML = `
+            <div class="flex items-center">
+                <i class="fas fa-check-circle text-xl mr-3"></i>
+                <div>${message}</div>
+            </div>
+        `;
+        
+        container.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.classList.remove('slide-in');
+            notification.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+            setTimeout(() => {
+                if (container.contains(notification)) {
+                    container.removeChild(notification);
+                }
+            }, 500);
+        }, 2000);
+    }
+    </script>
+</body>
+</html>

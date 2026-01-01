@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeTyy - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coffee': {
+                            '50': '#fefaf6',
+                            '100': '#f7f0e9',
+                            '200': '#e8d7c8',
+                            '300': '#d6bba3',
+                            '400': '#c19a7e',
+                            '500': '#a1887f',
+                            '600': '#8d6e63',
+                            '700': '#6d4c41',
+                            '800': '#5d4037',
+                            '900': '#3e2723',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-coffee-50 min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-coffee-800 text-white sticky top-0 z-50 shadow-lg"></nav>
+
+    <!-- Hero -->
+    <section class="relative bg-gradient-to-r from-coffee-800 to-coffee-900 text-white overflow-hidden">
+        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6">Selamat Datang di <span class="text-coffee-200">CoffeeTyy </span></h1>
+                <p class="text-xl md:text-2xl mb-8 text-coffee-200">
+                    "CoffeeTyy  menyajikan kopi terbaik dengan cita rasa hangat, suasana nyaman, dan pengalaman berbeda di setiap cangkir."
+                </p>
+                <a href="menu.html" class="inline-block bg-coffee-500 hover:bg-coffee-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    Order Now <i class="ml-2 fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;"></div>
+        </div>
+    </section>
+
+    <!-- Fitur -->
+    <section class="py-16 bg-coffee-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-coffee-800 mb-12">Kenapa Memilih CoffeTyy?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
+                    <div class="text-coffee-500 mb-4">
+                        <i class="fas fa-coffee text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-coffee-800 mb-4">Kopi Premium</h3>
+                    <p class="text-coffee-600">Biji kopi pilihan dari perkebunan terbaik dengan proses roasting sempurna.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
+                    <div class="text-coffee-500 mb-4">
+                        <i class="fas fa-bolt text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-coffee-800 mb-4">Pesan Cepat</h3>
+                    <p class="text-coffee-600">Pesan langsung via WhatsApp, pembayaran mudah dengan QR code.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
+                    <div class="text-coffee-500 mb-4">
+                        <i class="fas fa-users text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-coffee-800 mb-4">Suasana Nyaman</h3>
+                    <p class="text-coffee-600">Tempat nyaman untuk bersantai, bekerja, atau bertemu teman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-coffee-800 mb-12">Menu Spesial</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-coffee-50 rounded-2xl p-6 text-center hover-lift">
+                    <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="Cappuccino" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-coffee-800">Cappuccino</h3>
+                    <p class="text-coffee-600 mb-4">Rp 25.000</p>
+                    <a href="menu.html" class="inline-block bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                        Pesan
+                    </a>
+                </div>
+                
+                <div class="bg-coffee-50 rounded-2xl p-6 text-center hover-lift">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="Caramel Macchiato" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-coffee-800">Caramel Macchiato</h3>
+                    <p class="text-coffee-600 mb-4">Rp 30.000</p>
+                    <a href="menu.html" class="inline-block bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                        Pesan
+                    </a>
+                </div>
+                
+                <div class="bg-coffee-50 rounded-2xl p-6 text-center hover-lift">
+                    <img src="https://buckets.sasa.co.id/v1/AUTH_Assets/Assets/p/website/medias/page_medias/Mie_Nyemek.jpeg" 
+                         alt="Mie Nyemek" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-coffee-800">Mie Nyemek</h3>
+                    <p class="text-coffee-600 mb-4">Rp 35.000</p>
+                    <a href="menu.html" class="inline-block bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                        Pesan
+                    </a>
+                </div>
+                
+                <div class="bg-coffee-50 rounded-2xl p-6 text-center hover-lift">
+                    <img src="https://s2.bukalapak.com/uploads/content_attachment/7bc16140a62ae17b54a9acb5/original/resep_roti_bakar_1.jpg" 
+                         alt="Roti Bakar" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-coffee-800">Roti Bakar</h3>
+                    <p class="text-coffee-600 mb-4">Rp 20.000</p>
+                    <a href="menu.html" class="inline-block bg-coffee-600 hover:bg-coffee-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                        Pesan
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="menu.html" class="inline-block bg-coffee-800 hover:bg-coffee-900 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    Lihat Semua Menu <i class="ml-2 fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-coffee-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-serif font-bold">CoffeeTyy </h3>
+                    <p class="text-coffee-200 mt-2">Kopi terbaik, suasana terbaik.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="text-coffee-200 hover:text-green-300 transition duration-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-coffee-200 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-coffee-200 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-coffee-700 mt-8 pt-8 text-center text-coffee-300">
+                <p>&copy; 2025 CoffeeTyy. All rights reserved.</p>
+                <p class="mt-2">WhatsApp: <a href="https://wa.me/62895614396565" class="text-green-300 hover:text-green-200">0895-6143-96565</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>
